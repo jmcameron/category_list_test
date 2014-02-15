@@ -18,6 +18,7 @@ The test - BEFORE Applying the patch to Joomla
 ----------------------------------------------
 
 * Download and install the plugin zip file: category_list_test.zip
+   * Note: when you click on the zip file..
 * In the plugin manager enable the 'Content - Category list test' plugin
 * Show the front page.  Notice that the plugin adds
 
@@ -26,12 +27,15 @@ The test - BEFORE Applying the patch to Joomla
   to both the category title and description (since it cannot tell them
   apart).
 
+  This illustrates the problem that the patch to Joomla 3.x is trying to
+  address.
+
 Patch Joomla 3.x
 ----------------
 
 * Edit this file: <site>/layouts/joomla/content/category_default.php
-* Around line 35, add '.title' to the context (last argument) so it reads like
-  this: 
+* Around line 35, add '.title' to the context (last argument) so it reads
+  like this:
 
     <?php echo JHtml::_('content.prepare', $displayData->get('category')->title, '', $extension.'.category.title'); ?>
 
@@ -44,8 +48,8 @@ Test the fix
   and
        [CATEGORY DESCRIPTION?] attached to the category description.
 
-This indicates the plugin can now distinguish between the category title and
-description and that the test was successful!
+This indicates the plugin can now distinguish between the category title
+and description and that the test was successful!
 
 If the test does not work for you, please contact me (see below) so I can
 figure out why and fix the test.
