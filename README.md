@@ -45,11 +45,11 @@ Test the fix
 * Display the category list page again.  
   Now you should see:
 
-       [CATEGORY TITLE] 
+   [CATEGORY TITLE] 
 
   attached to the category title, and:
 
-       [CATEGORY DESCRIPTION?] 
+   [CATEGORY DESCRIPTION?] 
 
   attached to the category description.
 
