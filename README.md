@@ -5,18 +5,17 @@ Here is the test procedure
 
 Setup
 -----
-
-* Create/find Category
-* Add a category description
-* Set up "Category List" menu item for Category.
+* Create or find a category.
+* Add a category description to that category (if it does not already have one).
+* Set up "Category List" menu item for the category.
 * Enable Show Title and Show Description for this menu item.
-* Display category list page on front end and make sure you can see the
+* Display the category list page on front end and make sure you can see the
   category description.  (If not, fix this first since plugin you are testing
   will not be invoked unless the category description is displayed.)
 
-The test - BEFORE Applying the patch to Joomla
-----------------------------------------------
 
+Install the test plugin
+-----------------------
 * Download and install the plugin zip file: category_list_test.zip
 
    * Note: when you click on the zip file, github takes you to another screen,
@@ -25,6 +24,10 @@ The test - BEFORE Applying the patch to Joomla
      plugin
 
 * In the plugin manager enable the 'Content - Category list test' plugin
+
+
+The test - BEFORE Applying the patch to Joomla
+----------------------------------------------
 * Show the front page.  Notice that the plugin adds
 
     [CATEGORY DESCRIPTION?]
