@@ -18,7 +18,12 @@ The test - BEFORE Applying the patch to Joomla
 ----------------------------------------------
 
 * Download and install the plugin zip file: category_list_test.zip
-   * Note: when you click on the zip file..
+
+   * Note: when you click on the zip file, github takes you to another screen,
+     click on the [RAW] button to download the zip file.  Save it on you local
+     computer and then use the "Upload and install option" to install the
+     plugin
+
 * In the plugin manager enable the 'Content - Category list test' plugin
 * Show the front page.  Notice that the plugin adds
 
