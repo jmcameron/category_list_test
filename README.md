@@ -7,6 +7,7 @@ NOTE: Use the latest version of Joomla 3.x or the github "master" for these test
 
 Setup
 -----
+* Use one of the default templates such as protostar
 * Create or find a category.
 * Add a category description to that category (if it does not already have one).
 * Set up "Category List" menu item for the category.
