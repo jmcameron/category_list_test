@@ -66,4 +66,4 @@ If the test works, please post the results on the github page:
 Thanks!
 
  -Jonathan Cameron
-  jmcameron@jmcameron.net
+  ( jmcameron@jmcameron.net )
