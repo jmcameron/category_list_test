@@ -16,9 +16,7 @@ Setup
 
 Install the test plugin
 -----------------------
-* Download and install the plugin zip file from this page: 
-
-   category_list_test.zip
+* Download and install the plugin zip file from this page: category_list_test.zip
 
    * Note: when you click on the zip file, github takes you to another screen,
      click on the [RAW] button to download the zip file.  Save it on you local
