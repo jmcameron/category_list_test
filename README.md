@@ -3,6 +3,8 @@ Category List Test Plugin for Joomla 3.x
 
 Here is the test procedure
 
+NOTE: Use the latest version of Joomla 3.x or the github "master" for these tests.
+
 Setup
 -----
 * Create or find a category.
