@@ -45,13 +45,13 @@ Test the fix
 * Display the category list page again.  
   Now you should see:
 
-   [CATEGORY TITLE] 
+    [CATEGORY TITLE] 
 
-  attached to the category title, and:
+  appended to the category title, and:
 
-   [CATEGORY DESCRIPTION?] 
+    [CATEGORY DESCRIPTION?] 
 
-  attached to the category description.
+  appended after the category description.
 
 This indicates the plugin can now distinguish between the category title
 and description and that the test was successful!
