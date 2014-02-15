@@ -37,18 +37,21 @@ Patch Joomla 3.x
 * Around line 35, add '.title' to the context (last argument) so it reads
   like this:
 
-    <?php echo JHtml::_('content.prepare', $displayData->get('category')->title, '', $extension.'.category.title'); ?>
+      <?php echo JHtml::_('content.prepare', $displayData->get('category')->title, '', $extension.'.category.title'); ?>
 
 Test the fix
 ------------
 
-* Display the category list page again.  Now you should see
+* Display the category list page again.  
+  Now you should see:
 
-       [CATEGORY TITLE] attached to the category title
+       [CATEGORY TITLE] 
 
-  and
+  attached to the category title, and:
 
-       [CATEGORY DESCRIPTION?] attached to the category description.
+       [CATEGORY DESCRIPTION?] 
+
+  attached to the category description.
 
 This indicates the plugin can now distinguish between the category title
 and description and that the test was successful!
