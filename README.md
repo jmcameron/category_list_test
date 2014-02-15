@@ -45,7 +45,9 @@ Test the fix
 * Display the category list page again.  Now you should see
 
        [CATEGORY TITLE] attached to the category title
+
   and
+
        [CATEGORY DESCRIPTION?] attached to the category description.
 
 This indicates the plugin can now distinguish between the category title
