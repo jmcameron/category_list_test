@@ -21,21 +21,21 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
  */
 class plgContentCategory_list_test extends JPlugin
 {
-	   /**
-	    * Constructor
-	    *
-	    * @param object $subject The object to observe
-	    * @param array $config  An optional associative array of configuration settings.
-	    * Recognized key values include 'name', 'group', 'params', 'language'
-	    * (this list is not meant to be comprehensive).
-	    */
-	   public function __construct(&$subject, $config = array())
-	   {
-		   parent::__construct($subject, $config);
+	/**
+	 * Constructor
+	 *
+	 * @param object $subject The object to observe
+	 * @param array $config  An optional associative array of configuration settings.
+	 * Recognized key values include 'name', 'group', 'params', 'language'
+	 * (this list is not meant to be comprehensive).
+	 */
+	public function __construct(&$subject, $config = array())
+	{
+		parent::__construct($subject, $config);
 
-		   // Always load the language
-		   $this->loadLanguage();
-	   }
+		// Always load the language
+		$this->loadLanguage();
+	}
 
 	/**
 	 * The content plugin that inserts the attachments list into content items
@@ -49,16 +49,18 @@ class plgContentCategory_list_test extends JPlugin
 	 */
 	public function onContentPrepare($context, &$row, &$params, $page = 0)
 	{
-		$title_array = array('com_content.category.title', 'com_newsfeeds.category.title', 'com_contact.category.title', 'com_weblinks.category.title');
-		
+		// Handle the title
+		$title_array = array('com_content.category.title', 'com_newsfeeds.category.title',
+							 'com_contact.category.title', 'com_weblinks.category.title');
 		if (in_array($context, $title_array))
 		{
 			$row->text .= " [CATEGORY TITLE!]";
 			return true;
 		}
 
-		$desc_array = array('com_content.category', 'com_newsfeeds.category', 'com_contact.category', 'com_weblinks.category');
-		
+		// Handle the description
+		$desc_array = array('com_content.category', 'com_newsfeeds.category',
+							'com_contact.category', 'com_weblinks.category');
 		if (in_array($context, $desc_array))
 		{
 			$row->text .= " [CATEGORY DESCRIPTION?]";
