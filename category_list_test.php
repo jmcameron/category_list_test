@@ -1,4 +1,3 @@
-
 <?php
 /**
  * Category list test
@@ -50,13 +49,17 @@ class plgContentCategory_list_test extends JPlugin
 	 */
 	public function onContentPrepare($context, &$row, &$params, $page = 0)
 	{
-		if ($context == 'com_content.category.title')
+		$title_array = array('com_content.category.title', 'com_newsfeeds.category.title', 'com_contact.category.title', 'com_weblinks.category.title');
+		
+		if (in_array($context, $title_array))
 		{
 			$row->text .= " [CATEGORY TITLE!]";
 			return true;
 		}
 
-		if ($context == 'com_content.category')
+		$desc_array = array('com_content.category', 'com_newsfeeds.category', 'com_contact.category', 'com_weblinks.category');
+		
+		if (in_array($context, $desc_array))
 		{
 			$row->text .= " [CATEGORY DESCRIPTION?]";
 			return true;
